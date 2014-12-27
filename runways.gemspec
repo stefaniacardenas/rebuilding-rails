@@ -5,7 +5,7 @@ require 'runways/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "runways"
-  spec.version       = Runways::0.1
+  spec.version       = Runways::VERSION
   spec.authors       = ["Stefania F. Cardenas"]
   spec.email         = ["stefaniaferullo@hotmail.com"]
   spec.summary       = ["Building my own Ruby Web Framework"]
