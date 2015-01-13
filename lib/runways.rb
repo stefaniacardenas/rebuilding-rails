@@ -1,4 +1,5 @@
 require "runways/version"
+require "runways/array"
 
 module Runways
   class Application
