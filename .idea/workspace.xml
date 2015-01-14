@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c379ca1-726c-45db-a391-a67599cebe47" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runways/runways-0.0.2.gem" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/best-quotes" afterPath="$PROJECT_DIR$/best-quotes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runways/lib/runways.rb" afterPath="$PROJECT_DIR$/runways/lib/runways.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/runways/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/runways/Gemfile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="$PROJECT_DIR$/runways/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/runways/Rakefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/runways.rb" afterPath="$PROJECT_DIR$/runways/lib/runways.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/runways/array.rb" afterPath="$PROJECT_DIR$/runways/lib/runways/array.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/runways/routing.rb" afterPath="$PROJECT_DIR$/runways/lib/runways/routing.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/runways/version.rb" afterPath="$PROJECT_DIR$/runways/lib/runways/version.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/runways-0.0.2.gem" afterPath="$PROJECT_DIR$/runways/runways-0.0.2.gem" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/runways.gemspec" afterPath="$PROJECT_DIR$/runways/runways.gemspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="runways.iws" />
@@ -39,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quotes_controller.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="quotes_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/best-quotes/app/controllers/quotes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="286">
-              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.10057143" vertical-offset="0" max-vertical-offset="875">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -69,21 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runways.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="runways.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runways/lib/runways.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7737143" vertical-offset="71" max-vertical-offset="1034">
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="36" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runways/lib/runways/routing.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.76" vertical-offset="0" max-vertical-offset="638">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state vertical-scroll-proportion="-21.12" vertical-offset="0" max-vertical-offset="770">
+              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -102,7 +99,6 @@
         <option value="$PROJECT_DIR$/lib/runways.rb" />
         <option value="$PROJECT_DIR$/runways/runways.gemspec" />
         <option value="$PROJECT_DIR$/best-quotes/app/controllers/quotes_controller.rb" />
-        <option value="$PROJECT_DIR$/runways/lib/runways.rb" />
       </list>
     </option>
   </component>
@@ -166,24 +162,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="runways" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="runways" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rebuilding-rails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="runways" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,7 +321,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="994" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -351,7 +329,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25612354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25612354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -452,6 +430,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/runways/lib/runways.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.12" vertical-offset="0" max-vertical-offset="770">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/runways/runways.gemspec">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.36" vertical-offset="0" max-vertical-offset="660">
@@ -462,24 +448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/best-quotes/app/controllers/quotes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="286">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runways/lib/runways/routing.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.76" vertical-offset="0" max-vertical-offset="638">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runways/lib/runways.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7737143" vertical-offset="71" max-vertical-offset="1034">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="36" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.10057143" vertical-offset="0" max-vertical-offset="875">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
           <folding />
         </state>
       </provider>
