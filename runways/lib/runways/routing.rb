@@ -7,7 +7,7 @@ module Runways
 			# Basically we are assigning an empty string to whatever there is before the first slash of our URL
 			# cont is the controller 
 			# Assign the whatsever after the first url slash to the controller and so on
-			_,cont, action, after =
+			_, cont, action, after =
 				# Split the URL every time you find the slash
 				# Split no more than 4 times
 				env["PATH_INFO"].split('/', 4)

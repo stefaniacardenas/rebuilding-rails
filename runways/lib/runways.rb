@@ -22,7 +22,11 @@ module Runways
 
   	def initialize(env)
   		@env = env
-  	end
+    end
+
+    def env
+      @env
+    end
 
   end
 
