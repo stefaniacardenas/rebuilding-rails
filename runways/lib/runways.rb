@@ -7,6 +7,13 @@ module Runways
   class Application
 
     def call(env)
+
+      #This is to avoid seeing an error on the server for favicon not found.
+      if env['PATH_INFO'] == '/favicon.ico'
+        return [404,
+        {'Content-Type' => 'text/html'}, []]
+      end
+
     	klass, act = get_controller_and_action(env)
     	controller = klass.new(env)
     	text = controller.send(act)
