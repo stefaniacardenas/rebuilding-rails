@@ -1,6 +1,9 @@
 require "runways/version"
 require "runways/array"
 require "runways/routing"
+require "runways/util"
+require "runways/dependencies"
+require "runways/controller"
 
 module Runways
 
@@ -23,18 +26,6 @@ module Runways
         [text]]
     end
   
-  end
-
-  class Controller
-
-  	def initialize(env)
-  		@env = env
-    end
-
-    def env
-      @env
-    end
-
   end
 
 end
