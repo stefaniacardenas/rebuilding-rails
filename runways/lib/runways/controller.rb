@@ -1,8 +1,10 @@
 require "erubis"
+require 'runways/file_model'
 
 module Runways
 
   class Controller
+    include Runways::Model
 
     def initialize(env)
       @env = env

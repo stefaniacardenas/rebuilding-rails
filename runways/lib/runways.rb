@@ -4,6 +4,7 @@ require "runways/routing"
 require "runways/util"
 require "runways/dependencies"
 require "runways/controller"
+require "runways/file_model"
 
 module Runways
 
