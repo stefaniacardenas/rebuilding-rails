@@ -21,10 +21,17 @@ module Runways
     	klass, act = get_controller_and_action(env)
     	controller = klass.new(env)
     	text = controller.send(act)
-			# This line returns success (200) and state that this will be an html content type
-      [200,{'Content-Type'=>'text/html'},
-    	# This is the output of our call
-        [text]]
+
+			if controller.get_response
+        st,hd,rs = controller.get_response.to_a
+        [st,hd,[rs.body].flatten]
+      else
+        # This line returns success (200) and state that this will be an html content type
+        [200,{'Content-Type'=>'text/html'},
+         # This is the output of our call
+         [text]]
+      end
+
     end
   
   end
