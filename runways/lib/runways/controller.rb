@@ -16,7 +16,11 @@ module Runways
       @env
     end
 
-    def dispatch(action, routing_params ={})
+    def request
+      @request ||= Rack::Request.new(@env) # ||= stores away the result. It returns the calculation not the value
+    end
+
+    def dispatch(action, routing_params = {})
       @routing_params = routing_params
       text = self.send(action)
       if get_response
@@ -29,23 +33,6 @@ module Runways
 
     def self.action(act,rp={})
       proc {|e| self.new(e).dispatch(act,rp)}
-    end
-
-    def render(view_name, locals={})
-      filename = File.join "app", "views", controller_name, "#{view_name}.html.erb"
-      template = File.read filename
-      eruby = Erubis::Eruby.new(template)
-      eruby.result locals.merge(:env => env)
-    end
-
-    def controller_name
-      klass = self.class
-      klass = klass.to_s.gsub /Controller$/,""
-      Runways.to_underscore klass
-    end
-
-    def request
-      @request ||= Rack::Request.new(@env) # ||= stores away the result. It returns the calculation not the value
     end
 
     def params
@@ -64,6 +51,19 @@ module Runways
 
     def render_response(*args)
       response(render(*args))
+    end
+
+    def render(view_name, locals = {})
+      filename = File.join "app", "views", controller_name, "#{view_name}.html.erb"
+      template = File.read filename
+      eruby = Erubis::Eruby.new(template)
+      eruby.result locals.merge(:env => env)
+    end
+
+    def controller_name
+      klass = self.class
+      klass = klass.to_s.gsub /Controller$/, ""
+      Runways.to_underscore klass
     end
 
   end
