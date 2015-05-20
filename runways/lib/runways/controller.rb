@@ -31,8 +31,8 @@ module Runways
       end
     end
 
-    def self.action(act,rp={})
-      proc {|e| self.new(e).dispatch(act,rp)}
+    def self.action(act, rp = {})
+      proc {|e| self.new(e).dispatch(act, rp)}
     end
 
     def params
@@ -42,7 +42,7 @@ module Runways
     def response(text, status = 200, headers={})
       raise "Already responded!" if @response
       a = [text].flatten
-      @response = Rack::Response.new(a,status,headers)
+      @response = Rack::Response.new( a, status,headers)
     end
 
     def get_response
